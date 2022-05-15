@@ -21,9 +21,9 @@ marquee {
     font-weight: bold;
 }
 
-h1 {
+/* h1 {
     text-align: center;
-}
+} */
 
 table {
     border: 1px solid gray;
@@ -31,12 +31,21 @@ table {
     margin: 20px 0;
     box-shadow: 4px 0px 6px 6px;
 }
-tfoot {
-   
+
+table caption {
+    font-size: 1.5em;
+    margin: .55em 0.80em;
+}
+
+table tr {
+    padding: 0.35em;
 }
 
 table thead th {
     text-align: left;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 table tbody {
@@ -48,10 +57,16 @@ tbody tr:nth-child(even) {
     background-color: #cce;
 }
 
+tbody tr:nth-child(odd) {
+    background-color: #ee8;
+}
+
 /* styling the second column */
 tbody > tr>:nth-child(2) {
-    background-color: #ccc;
+    background-color: #;
+    color: #000;
 }
+
 table tfoot tr td {
     text-align: center;
 }
@@ -69,4 +84,39 @@ footer {
 
 p {
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        text-size: 1.3em;
+    }
+
+     
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
 }
