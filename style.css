@@ -51,7 +51,7 @@ table thead th {
 
 table tbody {
     text-align: left;
-    cellspacing: 5 0;
+    /* cellspacing: 5 0; */
 }
 
 tbody tr:nth-child(even) {
@@ -64,7 +64,6 @@ tbody tr:nth-child(odd) {
 
 /* styling the second column */
 tbody > tr>:nth-child(2) {
-    background-color: #;
     color: #000;
     padding-left: 7px;
 }
@@ -99,7 +98,7 @@ a {
     }
 
     table caption {
-        text-size: 1.3em;
+        font-size: 1.3em;
     }
 
      
