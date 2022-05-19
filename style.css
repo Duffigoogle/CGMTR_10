@@ -64,7 +64,7 @@ tbody tr:nth-child(odd) {
 
 /* styling the second column */
 tbody > tr>:nth-child(2) {
-    background-color: #;
+    background-color: ;
     color: #000;
     padding-left: 7px;
 }
