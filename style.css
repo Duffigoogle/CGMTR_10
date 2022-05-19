@@ -51,7 +51,7 @@ table thead th {
 
 table tbody {
     text-align: left;
-    cellspacing: 5 0;
+    /* cellspacing: 5 0; */
 }
 
 tbody tr:nth-child(even) {
@@ -62,9 +62,16 @@ tbody tr:nth-child(odd) {
     background-color: #ee8;
 }
 
+.tbody-2 tr:nth-child(even) {
+    background-color: rgb(54, 123, 126);
+}
+
+.tbody-2 tr:nth-child(odd) {
+    background-color: rgb(191, 197, 197);
+}
+
 /* styling the second column */
 tbody > tr>:nth-child(2) {
-    background-color: ;
     color: #000;
     padding-left: 7px;
 }
@@ -83,6 +90,7 @@ span {
 footer {
     background: #c1c1c1;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
 p {
@@ -93,13 +101,24 @@ a {
     text-decoration: none;
 }
 
+.next-page {
+    display: block;    
+    width: 7%;   
+    margin-left: auto ;  
+    font-weight: 700; 
+}
+
+.previous-page {
+    font-weight: 700;
+}
+
 @media screen and (max-width: 600px) {
     table {
         border: 0;
     }
 
     table caption {
-        text-size: 1.3em;
+        font-size: 1.3em;
     }
 
      
